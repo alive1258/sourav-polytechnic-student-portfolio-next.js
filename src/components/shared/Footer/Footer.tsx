@@ -147,14 +147,14 @@ const Footer: React.FC = () => {
         {/* Bottom Section - Copyright and extras */}
         <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-gray-500 text-sm flex items-center gap-2">
-            <span>© {currentYear} Sourav Kumar</span>
+            <span>© {currentYear} Sourav Hossain</span>
             <span className="w-1 h-1 bg-gray-600 rounded-full"></span>
             <span>Polytechnic Student</span>
             <span className="w-1 h-1 bg-gray-600 rounded-full"></span>
             <span className="flex items-center gap-1">
               Made with{" "}
               <FaHeart className="text-red-500 animate-pulse" size={12} /> in
-              India
+              Bangladesh
             </span>
           </div>
 

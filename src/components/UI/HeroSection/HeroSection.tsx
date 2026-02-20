@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -23,35 +24,41 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-block mb-6">
               <span className="bg-gray-900 text-blue-400 text-sm font-medium px-4 py-2 rounded-full border border-gray-800 shadow-lg">
-                👋 Welcome to my portfolio
+                👋 Electronics Engineering Student
               </span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Hi, I&apos;m{" "}
-              <span className="relative">
+            {/* Main Heading - Full Name */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4">
+              <span className="block">Md Sabbir Hossain</span>
+              <span className="relative inline-block mt-2">
                 <span className="relative z-10 bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Sourav Kumar
+                  Sourav
                 </span>
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-blue-500/20 blur-md z-0 hidden sm:block"></span>
               </span>
             </h1>
 
-            {/* Dynamic Title */}
-            <h2 className="text-xl sm:text-2xl text-gray-300 mb-6">
+            {/* Dynamic Title - Enhanced with actual roles */}
+            <h2 className="text-lg sm:text-xl text-gray-300 mb-6">
               <span className="font-medium text-gray-200">
-                Polytechnic Student
+                Electronics Engineering Student
               </span>
-              <span className="mx-3 text-gray-600">•</span>
-              <span className="text-blue-400 font-medium">Programmer</span>
+              <span className="mx-2 text-gray-600">|</span>
+              <span className="text-blue-400 font-medium">C/C++ & Python</span>
+              <span className="mx-2 text-gray-600">|</span>
+              <span className="text-purple-400 font-medium">PCB Design</span>
             </h2>
 
-            {/* Description */}
-            <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-              Passionate about creating elegant solutions through code.
-              Currently pursuing my polytechnic diploma while building
-              real-world projects and exploring modern web technologies.
+            {/* Description - Updated with actual info */}
+            <p className="text-gray-400 text-base sm:text-lg mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              Electronics Engineering student at Tangail Polytechnic Institute,
+              passionate about electronics, microcontrollers, IoT, and embedded
+              systems. I have hands-on experience in PCB design, C/C++, and
+              Python programming. Currently expanding my skills through the
+              Phitron CSE Fundamentals course. I enjoy building innovative
+              electronics projects and aim to develop smart devices that improve
+              everyday life.
             </p>
 
             {/* CTA Buttons */}
@@ -61,7 +68,7 @@ const HeroSection = () => {
                 className="group relative px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white font-medium rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-1"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  View My Work
+                  View My Projects
                   <svg
                     className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                     fill="none"
@@ -100,12 +107,12 @@ const HeroSection = () => {
               </Link>
             </div>
 
-            {/* Stats Section */}
+            {/* Stats Section - Updated with relevant stats */}
             <div className="grid grid-cols-3 gap-4 max-w-md mx-auto md:mx-0">
               {[
-                { value: "10+", label: "Projects" },
-                { value: "3", label: "Certifications" },
-                { value: "2+", label: "Years Coding" },
+                { value: "5+", label: "Projects" },
+                { value: "2+", label: "Years" },
+                { value: "IoT", label: "Embedded" },
               ].map((stat, index) => (
                 <div key={index} className="text-center group">
                   <div className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
@@ -118,15 +125,17 @@ const HeroSection = () => {
               ))}
             </div>
 
-            {/* Tech Stack Pills */}
+            {/* Tech Stack Pills - Updated with actual skills */}
             <div className="mt-8 flex flex-wrap gap-2 justify-center md:justify-start">
               {[
-                "React",
-                "Next.js",
-                "TypeScript",
-                "Node.js",
-                "Tailwind",
+                "C/C++",
                 "Python",
+                "PCB Design",
+                "IoT",
+                "Embedded Systems",
+                "Arduino",
+                "Microcontrollers",
+                "Circuit Design",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -136,6 +145,26 @@ const HeroSection = () => {
                 </span>
               ))}
             </div>
+
+            {/* Institution Badge */}
+            <div className="mt-6 inline-flex items-center gap-2 bg-gray-900/50 px-4 py-2 rounded-lg border border-gray-800">
+              <svg
+                className="w-4 h-4 text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                />
+              </svg>
+              <span className="text-sm text-gray-300">
+                Tangail Polytechnic Institute
+              </span>
+            </div>
           </div>
 
           {/* Right Content - Image Section */}
@@ -144,7 +173,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
 
             {/* Main Image Container */}
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-120 lg:h-120 mx-auto">
               {/* Animated Border Rings */}
               <div className="absolute inset-0 rounded-full border-2 border-blue-500/30 animate-ping"></div>
               <div className="absolute inset-0 rounded-full border-2 border-purple-500/30 animate-pulse delay-300"></div>
@@ -152,62 +181,69 @@ const HeroSection = () => {
               {/* Image Container with Gradient Border */}
               <div className="absolute inset-0 rounded-full bg-linear-to-r from-blue-500 to-purple-500 p-1">
                 <div className="relative w-full h-full rounded-full overflow-hidden bg-black">
-                  {/* Replace with actual image when available */}
+                  {/* Electronics/PCB themed placeholder - shows until image loads */}
                   <div className="w-full h-full bg-linear-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                     <span className="text-7xl text-gray-700 animate-pulse">
-                      👨‍💻
+                      🔌
                     </span>
                   </div>
 
-                  {/* Uncomment when you have the actual image */}
-                  {/* <Image
-                    src="/images/sourav-profile.jpg"
-                    alt="Sourav Kumar - Programmer"
+                  {/* Actual image - replace with your photo */}
+                  <Image
+                    src="/images/sourav.png"
+                    alt="Md Sabbir Hossain Sourav - Electronics Engineer"
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-500"
                     priority
-                  /> */}
+                  />
                 </div>
               </div>
 
-              {/* Floating Elements */}
+              {/* Floating Elements - Updated to reflect electronics theme */}
               <div className="absolute -top-4 -right-4 bg-gray-800 rounded-xl shadow-2xl p-3 border border-gray-700 animate-bounce backdrop-blur-sm">
-                <div className="text-3xl filter drop-shadow-lg">👨‍💻</div>
+                <div className="text-3xl filter drop-shadow-lg">🔌</div>
               </div>
 
               <div className="absolute -bottom-2 -left-4 bg-gray-800 rounded-xl shadow-2xl p-3 border border-gray-700 animate-bounce delay-1000 backdrop-blur-sm">
-                <div className="text-3xl filter drop-shadow-lg">🚀</div>
+                <div className="text-3xl filter drop-shadow-lg">⚡</div>
               </div>
 
               <div className="absolute top-1/2 -right-8 bg-linear-to-r from-blue-600 to-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg animate-pulse shadow-blue-500/50">
-                <span className="text-lg font-bold">⚡</span>
+                <span className="text-lg font-bold">🔧</span>
               </div>
 
               {/* Experience Badge */}
               <div className="absolute -left-8 bottom-12 bg-gray-800 rounded-lg shadow-2xl p-3 border border-gray-700 hidden lg:block backdrop-blur-sm">
-                <div className="text-xs text-gray-400">Coding since</div>
-                <div className="text-lg font-bold text-white">2022</div>
+                <div className="text-xs text-gray-400">PCB Design</div>
+                <div className="text-lg font-bold text-white">Expert</div>
               </div>
             </div>
 
-            {/* Code Snippet Card */}
+            {/* Code Snippet Card - Updated with electronics theme */}
             <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800/90 text-white p-4 rounded-xl shadow-2xl border border-gray-700 hidden lg:block backdrop-blur-sm">
               <pre className="text-xs font-mono">
                 <code>
-                  <span className="text-blue-400">const</span>{" "}
-                  <span className="text-green-400">developer</span> = {"{"}
+                  <span className="text-blue-400">class</span>{" "}
+                  <span className="text-green-400">ElectronicsEngineer</span>{" "}
+                  {"{"}
                   <br />
-                  &nbsp;&nbsp;name:{" "}
-                  <span className="text-yellow-400">&apos;Sourav&apos;</span>,
+                  &nbsp;&nbsp;<span className="text-blue-400">string</span> name
+                  = <span className="text-yellow-400">&quot;Sourav&quot;</span>;
                   <br />
-                  &nbsp;&nbsp;status:{" "}
-                  <span className="text-yellow-400">&apos;learning&apos;</span>,
+                  &nbsp;&nbsp;<span className="text-blue-400">string</span>{" "}
+                  passion ={" "}
+                  <span className="text-yellow-400">
+                    &quot;IoT & Embedded&quot;
+                  </span>
+                  ;
                   <br />
-                  &nbsp;&nbsp;passion:{" "}
-                  <span className="text-yellow-400">&apos;coding&apos;</span>,
+                  &nbsp;&nbsp;<span className="text-blue-400">void</span>{" "}
+                  <span className="text-purple-400">innovate</span>() {"{"}
                   <br />
-                  &nbsp;&nbsp;year:{" "}
-                  <span className="text-yellow-400">2024</span>,
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <span className="text-gray-400">Building smart devices</span>
+                  <br />
+                  &nbsp;&nbsp;{"}"}
                   <br />
                   {"}"};
                 </code>
@@ -219,7 +255,7 @@ const HeroSection = () => {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block">
           <div className="flex flex-col items-center gap-2 text-gray-600">
-            <span className="text-sm">Scroll to explore</span>
+            <span className="text-sm">Explore my work</span>
             <div className="w-6 h-10 border-2 border-gray-800 rounded-full flex justify-center">
               <div className="w-1 h-3 bg-linear-to-b from-blue-500 to-purple-500 rounded-full mt-2 animate-bounce"></div>
             </div>
