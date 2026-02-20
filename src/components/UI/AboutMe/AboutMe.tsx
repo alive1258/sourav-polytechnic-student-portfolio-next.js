@@ -1,6 +1,4 @@
-import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import {
   FaGraduationCap,
   FaMicrochip,
@@ -9,7 +7,6 @@ import {
   FaCalendar,
   FaHeart,
   FaAward,
-  FaBook,
   FaCertificate,
 } from "react-icons/fa6";
 import {
@@ -81,7 +78,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="py-16 md:py-24 bg-black relative overflow-hidden"
+      className="py-16 md:py-24 bg-gray-900/70 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
@@ -90,7 +87,7 @@ const AboutMe = () => {
       </div>
 
       {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -169,11 +166,11 @@ const AboutMe = () => {
                 Who Am I?
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                I'm an Electronics Engineering student at Tangail Polytechnic
-                Institute, passionate about bridging the gap between hardware
-                and software. My journey in electronics started with simple LED
-                circuits, and now I'm building complex embedded systems and IoT
-                devices.
+                I&apos;m an Electronics Engineering student at Tangail
+                Polytechnic Institute, passionate about bridging the gap between
+                hardware and software. My journey in electronics started with
+                simple LED circuits, and now I&apos;m building complex embedded
+                systems and IoT devices.
               </p>
               <p className="text-gray-300 leading-relaxed mt-4">
                 Currently expanding my skills through the Phitron CSE
@@ -253,54 +250,6 @@ const AboutMe = () => {
                   </span>
                 ))}
               </div>
-            </div>
-
-            {/* Education */}
-            <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
-              <h3 className="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
-                Education
-              </h3>
-              <div className="space-y-4">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                    <FaGraduationCap className="text-blue-500 text-xl" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold">
-                      Diploma in Engineering
-                    </h4>
-                    <p className="text-gray-400 text-sm">
-                      Tangail Polytechnic Institute
-                    </p>
-                    <p className="text-gray-500 text-xs mt-1">
-                      2022 - Present | 3rd Year
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
-                    <FaBook className="text-purple-500 text-xl" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold">
-                      CSE Fundamentals
-                    </h4>
-                    <p className="text-gray-400 text-sm">Phitron Course</p>
-                    <p className="text-gray-500 text-xs mt-1">
-                      Currently Enrolled
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Quote */}
-            <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl p-6 border border-blue-500/20">
-              <p className="text-gray-300 text-center italic">
-                "Building the future, one line of code and one circuit at a
-                time."
-              </p>
             </div>
           </div>
         </div>

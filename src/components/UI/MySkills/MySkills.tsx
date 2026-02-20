@@ -1,24 +1,10 @@
 "use client";
-import {
-  FaCode,
-  FaMicrochip,
-  FaCogs,
-  FaPython,
-  FaCloud,
-  FaDatabase,
-  FaGithub,
-} from "react-icons/fa";
+import { FaMicrochip, FaCogs, FaPython, FaGithub } from "react-icons/fa";
 import {
   SiCplusplus,
   SiArduino,
   SiRaspberrypi,
-  SiTensorflow,
-  SiPytorch,
-  SiScikitlearn,
-  SiPandas,
-  SiNumpy,
   SiAltiumdesigner,
-  SiOracle,
   SiEspressif,
   SiMqtt,
   SiBluetooth,
@@ -103,7 +89,7 @@ const MySkills = () => {
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
 
         {/* Center glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600 rounded-full filter blur-3xl opacity-10"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-purple-600 rounded-full filter blur-3xl opacity-10"></div>
 
         {/* Bottom right glow */}
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse delay-1000"></div>

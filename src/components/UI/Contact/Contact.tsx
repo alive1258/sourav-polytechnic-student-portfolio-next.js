@@ -95,7 +95,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 md:py-24 bg-gray-900 relative overflow-hidden"
+      className="py-16 md:py-24 bg-gray-900/80 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
@@ -104,7 +104,7 @@ const Contact = () => {
       </div>
 
       {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -164,7 +164,7 @@ const Contact = () => {
             </div>
 
             {/* Availability Card */}
-            <div className="bg-gradient-to-br from-blue-600/10 to-purple-600/10 rounded-xl p-5 border border-blue-500/20">
+            <div className="bg-linear-to-br from-blue-600/10 to-purple-600/10 rounded-xl p-5 border border-blue-500/20">
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 <span className="text-xs text-gray-400">Available for</span>
@@ -270,7 +270,7 @@ const Contact = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center gap-2 group"
+                  className="w-full sm:w-auto px-6 py-3 bg-linear-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:from-purple-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center gap-2 group"
                 >
                   <span>Send Message</span>
                   <FaPaperPlane className="text-sm group-hover:translate-x-1 transition-transform" />
