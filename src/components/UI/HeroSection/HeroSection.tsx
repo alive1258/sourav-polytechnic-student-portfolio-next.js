@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
+import { SiLeetcode, SiCodeforces, SiHackerrank } from "react-icons/si";
 
 const HeroSection = () => {
   return (
@@ -47,7 +49,7 @@ const HeroSection = () => {
               <span className="mx-2 text-gray-600">|</span>
               <span className="text-blue-400 font-medium">C/C++ & Python</span>
               <span className="mx-2 text-gray-600">|</span>
-              <span className="text-purple-400 font-medium">PCB Design</span>
+              <span className="text-purple-400 font-medium">PCB Designer</span>
             </h2>
 
             {/* Description - Updated with actual info */}
@@ -60,6 +62,79 @@ const HeroSection = () => {
               electronics projects and aim to develop smart devices that improve
               everyday life.
             </p>
+
+            {/* Social Media Links - New Section */}
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-6">
+              {/* Facebook */}
+              <Link
+                href="https://facebook.com/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-600 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="Facebook"
+              >
+                <FaFacebook className="w-5 h-5 text-gray-400 hover:text-blue-600" />
+              </Link>
+
+              {/* LinkedIn */}
+              <Link
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-700 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="w-5 h-5 text-gray-400 hover:text-blue-700" />
+              </Link>
+
+              {/* GitHub */}
+              <Link
+                href="https://github.com/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="GitHub"
+              >
+                <FaGithub className="w-5 h-5 text-gray-400 hover:text-white" />
+              </Link>
+
+              {/* LeetCode */}
+              <Link
+                href="https://leetcode.com/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-yellow-600 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="LeetCode"
+              >
+                <SiLeetcode className="w-5 h-5 text-gray-400 hover:text-yellow-600" />
+              </Link>
+
+              {/* CodeForces */}
+              <Link
+                href="https://codeforces.com/profile/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-500 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="CodeForces"
+              >
+                <SiCodeforces className="w-5 h-5 text-gray-400 hover:text-blue-500" />
+              </Link>
+
+              {/* HackerRank */}
+              <Link
+                href="https://hackerrank.com/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-green-600 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="HackerRank"
+              >
+                <SiHackerrank className="w-5 h-5 text-gray-400 hover:text-green-600" />
+              </Link>
+
+              {/* Twitter/X */}
+              <Link
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                className="p-3 bg-gray-900 rounded-lg border border-gray-800 hover:border-blue-400 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1"
+                aria-label="Twitter"
+              >
+                <FaTwitter className="w-5 h-5 text-gray-400 hover:text-blue-400" />
+              </Link>
+            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
@@ -173,7 +248,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
 
             {/* Main Image Container */}
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-120 lg:h-120 mx-auto">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-130 lg:h-130 mx-auto">
               {/* Animated Border Rings */}
               <div className="absolute inset-0 rounded-full border-2 border-blue-500/30 animate-ping"></div>
               <div className="absolute inset-0 rounded-full border-2 border-purple-500/30 animate-pulse delay-300"></div>
